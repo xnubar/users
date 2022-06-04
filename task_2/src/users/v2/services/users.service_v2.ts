@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { users } from './users.storage';
+import { users } from '../../users.storage';
 
 @Injectable()
-export class UsersService {
+export class UsersServiceV2 {
   findOne(id: number) {
     return users.find((user) => user.id === id);
   }
